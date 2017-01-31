@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 *,
@@ -17,7 +18,7 @@ html {
 }
 
 body {
-	background-image: url('https://s17.postimg.org/817nb8enz/00w.jpgg');
+	background: #301b04 url('https://s17.postimg.org/817nb8enz/00w.jpg') center /cover no-repeat fixed;
 }
 
 .calculator {
