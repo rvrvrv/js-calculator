@@ -49,19 +49,14 @@ body {
 	border-radius: 2px;
 }
 
-.screen p {
-	margin: -35px 0px;
-	padding-right: 5px;
-}
-
-.buttons {
+.buttonZone {
 	width: 92%;
 	text-align: left;
 	margin: 30px auto;
 	padding: 0px 15px;
 }
 
-.buttons button {
+.buttonZone button {
 	font-family: 'Source Code Pro', monospace;
 	font-size: 3.5em;
 	background: darkslategrey;
