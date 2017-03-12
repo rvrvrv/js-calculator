@@ -30,12 +30,9 @@ $(document).ready(() => {
 	//Number Buttons
 	$('.numBtn').click(function () {
 		let numHit = $(this).attr('value');
-		//Prevent leading zeroes
-		if (numHit === '0' && scrn.length === 1 && scrn.indexOf('0') !== -1) {
-			return;
-		} else if (scrn.length < 11) {
-			$('.screen').append(numHit);
-		}
+		//Check for excessive leading zeroes before appending number to screen
+		if (numHit === '0' && scrn.length === 1 && scrn.includes('0')) return;
+		else if (scrn.length < 11) $('.screen').append(numHit);
 	});
 
 	//Decimal Button
@@ -74,8 +71,8 @@ $(document).ready(() => {
 		//If last character isn't an operator & user isn't dividing by zero,
 		//evaluate the expression
 		if (!mathOp.test(lastChar) && (scrn.substr(-2, 2) !== '÷0')) {
-			//Convert '×' to 'x' and '÷' to '/' for eval function
-			var expression = scrn.replace(/×/g, '*');
+			//Convert '×' to '*' and '÷' to '/' for eval function
+			let expression = scrn.replace(/×/g, '*');
 			expression = expression.replace(/÷/g, '/');
 			answer = parseFloat(eval(expression).toFixed(3));
 			$('.screen').text(answer);
