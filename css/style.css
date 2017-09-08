@@ -1,94 +1,89 @@
 html {
-	box-sizing: border-box;
-	overflow-x: hidden;
+  box-sizing: border-box;
+  user-select: none;
 }
 
-*,
-*:before,
-*:after {
-	cursor: default;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	outline: none !important;
-	-webkit-transition: .5s;
-	transition: .5s;
+*, :before, :after {
+  outline: none !important;
 }
 
 body {
-	background: #301b04 url('https://s17.postimg.org/817nb8enz/00w.jpg') center /cover no-repeat fixed;
+  background-image: url(https://s17.postimg.org/817nb8enz/00w.jpg);
 }
 
 .calculator {
-	width: 390px;
-	height: 490px;
-	background: rgb(20, 20, 20);
-	color: white;
-	margin: 5px auto;
-	text-align: center;
-	border: 2px groove black;
-	border-radius: 10px;
-	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5), inset 0px 4px 0px rgba(255, 255, 255, 0.4);
+  background: #141414;
+  border: 2px groove #000;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
+    inset 0 4px 0 rgba(255, 255, 255, 0.4);
+  color: #fff;
+  height: 490px;
+  margin: 5px auto;
+  text-align: center;
+  width: 390px;
 }
 
 .screen {
-	background: silver;
-	color: rgba(0, 0, 0, .95);
-	font-family: 'VT323', monospace;
-	font-size: 6.6em;
-	letter-spacing: -8px;
-	text-align: right;
-	padding: 5px;
-	width: 92%;
-	height: 15%;
-	line-height: 52px;
-	margin: 15px auto;
-	border: inset;
-	border-radius: 2px;
+  background: silver;
+  border: inset;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, .95);
+  cursor: default;
+  font-family: 'VT323', monospace;
+  font-size: 6.6em;
+  height: 15%;
+  letter-spacing: -8px;
+  line-height: 52px;
+  margin: 15px auto;
+  padding: 5px;
+  text-align: right;
+  width: 92%;
 }
 
-.buttonZone {
-	width: 92%;
-	text-align: left;
-	margin: 30px auto;
-	padding: 0px 15px;
+.screen p {
+  margin: -35px 0;
+  padding-right: 5px;
 }
 
-.buttonZone button {
-	font-family: 'Source Code Pro', monospace;
-	font-size: 3.5em;
-	background: darkslategrey;
+.buttons {
+  margin: 30px auto;
+  padding: 0 15px;
+  text-align: left;
+  width: 92%;
 }
 
 .btn {
-	color: lightgrey !important;
-	border: 1px outset darkgrey;
-	margin: 3px 1px;
+  background: darkslategrey;
+  border: 1px outset darkgrey;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 3.5em;
+  margin: 3px 1px;
+}
+
+.btn, .btn:hover, .btn:focus {
+  color: #d3d3d3;
 }
 
 .btn:active {
-	border: 1px inset darkgrey;
+  border-style: inset;
 }
 
-.numBtn,
-.decBtn {
-	width: 20.45%;
+.numBtn, .decBtn {
+  width: 20.45%;
 }
 
-.opBtn,
-.eqBtn {
-	background: #0A2414 !important;
-}
-
-.errBtn {
-	background: #240A14 !important;
-	width: 15.6%;
-	font-size: 2em !important;
-	padding: 0.76em 0;
+.opBtn, .eqBtn {
+  background: #0A2414;
 }
 
 .eqBtn {
-	width: 55%;
+  width: 55%;
+}
+
+.clrBtn {
+  background: #240A14;
+  font-size: 2em;
+  padding: .76em 0;
+  width: 15.6%;
 }
