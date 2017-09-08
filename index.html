@@ -1,55 +1,50 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
-	<title>JS Calculator</title>
-	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:900|VT323" rel="stylesheet">
-	<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:900|VT323" rel="stylesheet">
+  <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<div class="container-fluid">
-		<div class="calculator">
-			<div class="screen">123</div>
-			<div class="buttonZone">
-				<div class="row" id="btnRow1">
-					<button class="btn numBtn" value="7">7</button>
-					<button class="btn numBtn" value="8">8</button>
-					<button class="btn numBtn" value="9">9</button>
-					<button class="btn errBtn" id="btnCE">CE</button>
-					<button class="btn errBtn" id="btnAC">AC</button>
-				</div>
-				<div class="row" id="btnRow2">
-					<button class="btn numBtn" value="4">4</button>
-					<button class="btn numBtn" value="5">5</button>
-					<button class="btn numBtn" value="6">6</button>
-					<button class="btn opBtn" value="×">×</button>
-					<button class="btn opBtn" value="÷">÷</button>
-				</div>
-				<div class="row" id="btnRow3">
-					<button class="btn numBtn" value="1">1</button>
-					<button class="btn numBtn" value="2">2</button>
-					<button class="btn numBtn" value="3">3</button>
-					<button class="btn opBtn" value="-">-</button>
-					<button class="btn opBtn" value="+">+</button>
-				</div>
-				<div class="row" id="btnRow4">
-					<button class="btn numBtn" value="0">0</button>
-					<button class="btn decBtn" value=".">.</button>
-					<button class="btn eqBtn">=</button>
-				</div>
-			</div>
-			<div class="info row">
-				<p>This Javascript-powered calculator is intended to provide basic functionality.</p>
-			</div>
-		</div>
-	</div>
+  <div class="calculator">
+  <div class="screen">123</div>
+  <div class="buttons">
+    <div class="row" id="btnRow1">
+      <button class="btn numBtn" value="7">7</button>
+      <button class="btn numBtn" value="8">8</button>
+      <button class="btn numBtn" value="9">9</button>
+      <button class="btn clrBtn" id="btnCE">CE</button>
+      <button class="btn clrBtn" id="btnAC">AC</button>
+    </div>
+    <div class="row" id="btnRow2">
+      <button class="btn numBtn" value="4">4</button>
+      <button class="btn numBtn" value="5">5</button>
+      <button class="btn numBtn" value="6">6</button>
+      <button class="btn opBtn" value="×">×</button>
+      <button class="btn opBtn" value="÷">÷</button>
+    </div>
+    <div class="row" id="btnRow3">
+      <button class="btn numBtn" value="1">1</button>
+      <button class="btn numBtn" value="2">2</button>
+      <button class="btn numBtn" value="3">3</button>
+      <button class="btn opBtn" value="-">-</button>
+      <button class="btn opBtn" value="+">+</button>
+    </div>
+    <div class="row" id="btnRow4">
+      <button class="btn numBtn" value="0">0</button>
+      <button class="btn decBtn" value=".">.</button>
+      <button class="btn eqBtn">=</button>
+    </div>
+  </div>
+  <div class="row">
+    <p>This Javascript-powered calculator is intended to provide basic functionality.</p>
+  </div>
+</div>
 </body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/index.js"></script>
-
 </html>
